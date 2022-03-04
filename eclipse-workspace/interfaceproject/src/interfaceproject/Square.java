@@ -1,0 +1,22 @@
+package interfaceproject;
+
+public class Square implements Shape{
+
+	private double side;
+	public Square(double side) {
+		//super(); - since class is calling interface
+		this.side = side;
+	}
+	
+	@Override
+	public double getArea() {
+		return side*side;
+	}
+	
+	@Override
+	public double getPerimeter() {
+		return 4*side;
+	}
+	
+	
+}
